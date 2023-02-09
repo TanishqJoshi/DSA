@@ -4,6 +4,7 @@ void printArray(int arr[], int size){
     for(int i =0; i<size; i++){
         cout<<arr[i]<<" ";
 }
+cout<<endl;
 }
 void swapAlternate(int arr[], int size){
     for(int i=0; i<size; i+=2){
@@ -14,7 +15,10 @@ void swapAlternate(int arr[], int size){
 }
 int main(){
     int arr[6]={1,2,3,4,5,6};
+    int brr[5]={1,2,3,4,5};
     swapAlternate(arr,6);
+    swapAlternate(brr,5);
     printArray(arr,6);
+    printArray(brr,5);
     return 0;
 }
