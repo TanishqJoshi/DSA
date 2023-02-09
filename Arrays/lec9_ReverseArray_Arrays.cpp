@@ -1,25 +1,24 @@
 #include<iostream>
 using namespace std;
 
-void reverse(int arr[], int n){
+void printArray(int arr[], int size){
+    for(int i=0; i<size; i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+void reverse(int arr[], int size){
     int start = 0;
-    int end = n-1;
-    while(start<=end){
+    int end = size-1;
+    while(end>=start){
         swap(arr[start], arr[end]);
         start++;
         end--;
     }
 }
-
-void printArray(int arr[], int n){
-    for(int i=0; i<=n; i++){
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-}
 int main(){
-    int arr[6] = {1,2,3,4,5,6};
-    reverse(arr,6);
-    printArray(arr,6);
+    int arr[4] = {1,2,3,4};
+    reverse(arr,4);
+    printArray(arr,4);
     return 0;
 }
