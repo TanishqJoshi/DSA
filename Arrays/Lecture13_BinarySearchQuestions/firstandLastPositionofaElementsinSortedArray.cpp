@@ -41,7 +41,7 @@ int lastocc(int arr[], int size, int key){
     return ans;
 }
 int main(){
-    int arr[8]={1,2,3,7,7,8,8,8};
+    int arr[8]={1,2,3,4,5,7,7,8};
     cout<<firstocc(arr,8,7)<<endl;
     cout<<lastocc(arr,8,7)<<endl;
     return 0;
