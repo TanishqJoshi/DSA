@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
-void update1(int n){
-    n++;
-}
+// int& update1(int n){     //Bad Pratice
+//     n++;
+// }   
 
 void update2(int &n){
     n++;
