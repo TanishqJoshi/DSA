@@ -50,10 +50,24 @@ int main(){
 
 
 //print 1 to N linearly (By Backtracking)
-void solve(int n, int i){
+/*void solve(int n, int i){
     if(i<1) return ;
     solve(n,i-1);
     cout<<i<<endl;
+}
+int main(){
+    int n;
+    cin>>n;
+    solve(n,n);
+    return 0;
+}
+*/
+//print N to 1
+
+void solve(int n, int i){
+    if(i<1) return ;
+    cout<<i<<endl;
+    solve(n,i-1);
 }
 int main(){
     int n;
