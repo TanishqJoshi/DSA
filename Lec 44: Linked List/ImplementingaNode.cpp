@@ -2,9 +2,8 @@
 using namespace std;
 class Node{
     public:
-    int data;
+    int data;  
     Node* next;
-
     //constructor
     Node(int data){
         this -> data = data;
